@@ -1,0 +1,56 @@
+@import "variable";
+.testimonial{
+	padding: 70px;
+	&-list{
+		display: flex;
+		gap: 0 30px;
+		padding-top: 20px;
+	}
+	&-card{
+		padding: 20px 10px;
+		box-shadow: 0 10px 20px 3px #00968814;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		position: relative;
+		cursor: pointer;
+		transition: .5s;
+	}
+	&-card:hover{
+		transform: translateY(10px);
+	}
+	&-profile{
+		display: flex;
+		align-items: center;
+	}
+	&-ava{
+		width: 40px;
+		height: 40px;
+		border-radius: 5px;
+		flex-shrink: 0;
+		margin-right: 20px;
+		img{
+			width: 100%;
+			object-fit: cover;
+			border-radius: inherit;
+		}
+	}
+	&-text{
+		flex: 1;
+	}
+	&-name{
+		text-transform: uppercase;
+		margin-bottom: 10px;
+		position: relative;
+		font-size: 16px;
+		display: flex;
+		i{
+			font-size: 20px;
+			margin-left: 15px;
+			color: $green;
+		}
+	}
+	p{
+		font-weight: 200;
+	}
+}
